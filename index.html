@@ -15,13 +15,13 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #0f172a;
+            background-color: #000000;
             color: #f8fafc;
             overflow-x: hidden;
         }
 
         .gradient-text {
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            background: linear-gradient(90deg,#CF0F47, #FF0B55);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -86,7 +86,7 @@
         .skill-progress {
             height: 100%;
             border-radius: 4px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            background: linear-gradient(90deg, #CF0F47, #FF0B55);
             transition: width 1.5s ease-out;
         }
 
@@ -130,11 +130,11 @@
         }
 
         .glow {
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
         }
 
         .glow:hover {
-            box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
@@ -146,11 +146,11 @@
     <!-- Main Content -->
     <div class="content">
         <!-- Navigation -->
-        <nav class="fixed w-full z-50 bg-opacity-80 backdrop-blur-sm bg-gray-900">
+        <nav class="fixed w-full z-50 backdrop-blur-sm opacity-80" style="background-color: #1A1A1D;">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16 items-center">
                     <div class="flex items-center">
-                        <span class="text-xl font-bold gradient-text">Muhannad</span>
+                        <span class="text-xl font-bold">Muhannad</span>
                     </div>
                     <div class="hidden md:flex space-x-8">
                         <a href="#home" class="text-gray-300 hover:text-white transition duration-300">Home</a>
@@ -170,7 +170,7 @@
                 </div>
             </div>
             <!-- Mobile menu -->
-            <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95">
+            <div id="mobile-menu" class="hidden md:hidden bg-opacity-95" style="background-color: #1A1A1D;">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <a href="#home"
                         class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800">Home</a>
@@ -194,16 +194,16 @@
                         Hi, I'm <span class="gradient-text" id="typed"></span>
                     </h1>
                     <p class="text-xl text-gray-300 mb-8">
-                        A passionate <span class="font-bold text-blue-400">Software Engineer</span> specializing in
+                        A passionate <span class="font-bold" style="color: #CF0F47;">Software Engineer</span> specializing in
                         building exceptional digital experiences.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#contact"
-                            class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition duration-300 transform hover:scale-105 glow">
+                            class="px-6 py-3 hover:bg-blue-700 rounded-lg font-medium transition duration-300 transform hover:scale-105 glow" style="background-color: #CF0F47;">
                             Contact Me
                         </a>
                         <a href="#projects"
-                            class="px-6 py-3 border border-blue-600 text-blue-400 hover:bg-blue-900 hover:bg-opacity-30 rounded-lg font-medium transition duration-300 transform hover:scale-105">
+                            class="px-6 py-3 border hover:bg-opacity-30 rounded-lg font-medium transition duration-300 transform hover:scale-105">
                             View Work
                         </a>
                     </div>
@@ -225,15 +225,11 @@
                 <div class="md:w-1/2 flex justify-center">
                     <div class="relative w-64 h-64 md:w-80 md:h-80">
                         <div
-                            class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-20 blur-xl floating">
+                            class="absolute inset-0 rounded-full bg-gradient-to-br from-pink-500 to-red-300 opacity-20 blur-xl floating">
                         </div>
                         <div
-                            class="relative rounded-full overflow-hidden border-4 border-blue-500 w-full h-full floating">
+                            class="relative rounded-full overflow-hidden border-4 w-full h-full floating" style="border-color: #CF0F47;">
                             <img src="Muhannad2.PNG" alt="Profile" class="w-full h-full object-cover">
-                        </div>
-                        <div
-                            class="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-gray-800 px-4 py-2 rounded-lg shadow-lg border border-gray-700">
-                            <p class="text-sm font-medium text-white">Full Stack Developer</p>
                         </div>
                     </div>
                 </div>
@@ -246,22 +242,22 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-20 bg-gray-900 bg-opacity-50">
+        <section id="about" class="py-20 bg-opacity-50 opacity-80" style="background-color: #1A1A1D;">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">
                         <span class="gradient-text">About Me</span>
                     </h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+                    <div class="w-20 h-1 bg-gradient-to-r from-pink-600 to-red-800 mx-auto"></div>
                 </div>
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
                         <div class="relative w-64 h-64">
                             <div
-                                class="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 opacity-20 blur-xl floating">
+                                class="absolute inset-0 rounded-2xl bg-gradient-to-br from-pink-500 to-red-300 opacity-20 blur-xl floating">
                             </div>
                             <div
-                                class="relative rounded-2xl overflow-hidden border-4 border-blue-500 w-full h-full floating">
+                                class="relative rounded-2xl overflow-hidden border-4 w-full h-full floating" style="border-color: #CF0F47;">
                                 <img src="Muhannad3.PNG" alt="About" class="w-full h-full object-cover">
                             </div>
                         </div>
@@ -283,17 +279,17 @@
                             contributions in the field of technology.
                         </p>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 card-hover">
-                                <h4 class="font-bold text-blue-400 mb-2">Experience</h4>
-                                <p class="text-gray-300">2 Months</p>
+                            <div class="bg-opacity-50 p-4 rounded-lg border border-gray-700 card-hover" style="background-color: #212121;">
+                                <h4 class="font-bold mb-2" style="color: #CF0F47;">Experience</h4>
+                                <p style="color: #FFDEDE;">2 Months</p>
                             </div>
-                            <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 card-hover">
-                                <h4 class="font-bold text-blue-400 mb-2">Projects</h4>
-                                <p class="text-gray-300">10+ Completed</p>
+                            <div class="bg-opacity-50 p-4 rounded-lg border border-gray-700 card-hover" style="background-color: #212121;">
+                                <h4 class="font-bold mb-2" style="color: #CF0F47;">Projects</h4>
+                                <p style="color: #FFDEDE;">10+ Completed</p>
                             </div>
-                            <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 card-hover">
-                                <h4 class="font-bold text-blue-400 mb-2">Education</h4>
-                                <p class="text-gray-300">B.S. in SWE</p>
+                            <div class="bg-opacity-50 p-4 rounded-lg border border-gray-700 card-hover" style="background-color: #212121;">
+                                <h4 class="font-bold mb-2" style="color: #CF0F47;">Education</h4>
+                                <p style="color: #FFDEDE;">B.S. in SWE</p>
                             </div>
                         </div>
                     </div>
@@ -308,7 +304,7 @@
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">
                         <span class="gradient-text">My Skills</span>
                     </h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+                    <div class="w-20 h-1 bg-gradient-to-r from-pink-600 to-red-800 mx-auto"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
@@ -317,7 +313,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-medium">JavaScript/TypeScript</span>
-                                    <span class="text-blue-400">95%</span>
+                                    <span  style="color: #CF0F47;">95%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 95%"></div>
@@ -326,7 +322,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-medium">React.js</span>
-                                    <span class="text-blue-400">90%</span>
+                                    <span  style="color: #CF0F47;">90%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 90%"></div>
@@ -335,7 +331,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-medium">Node.js</span>
-                                    <span class="text-blue-400">85%</span>
+                                    <span  style="color: #CF0F47;">85%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 85%"></div>
@@ -344,7 +340,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-medium">MongoDB</span>
-                                    <span class="text-blue-400">80%</span>
+                                    <span  style="color: #CF0F47;">80%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 80%"></div>
@@ -358,7 +354,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-medium">Problem Solving</span>
-                                    <span class="text-blue-400">95%</span>
+                                    <span  style="color: #CF0F47;">95%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 95%"></div>
@@ -367,7 +363,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-medium">Teamwork</span>
-                                    <span class="text-blue-400">90%</span>
+                                    <span  style="color: #CF0F47;">90%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 90%"></div>
@@ -376,7 +372,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-medium">Communication</span>
-                                    <span class="text-blue-400">85%</span>
+                                    <span  style="color: #CF0F47;">85%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 85%"></div>
@@ -385,7 +381,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-medium">Project Management</span>
-                                    <span class="text-blue-400">80%</span>
+                                    <span  style="color: #CF0F47;">80%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 80%"></div>
@@ -398,63 +394,63 @@
                     <h3 class="text-2xl font-bold mb-6 text-center">Technologies I Work With</h3>
                     <div class="flex flex-wrap justify-center gap-6">
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
                             <span class="text-sm">React</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
                             <span class="text-sm">Node.js</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fab fa-js text-4xl text-yellow-400 mb-2"></i>
                             <span class="text-sm">JavaScript</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fab fa-python text-4xl text-blue-600 mb-2"></i>
                             <span class="text-sm">Python</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fas fa-database text-4xl text-green-400 mb-2"></i>
                             <span class="text-sm">NoSQL</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fas fa-database text-4xl text-orange-400 mb-2"></i>
                             <span class="text-sm">SQL</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fab fa-docker text-4xl text-blue-300 mb-2"></i>
                             <span class="text-sm">Docker</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fab fa-git-alt text-4xl text-orange-600 mb-2"></i>
                             <span class="text-sm">Git</span>
                         </div>
 
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-25 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-25 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
                             <span class="text-sm">React Native</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <img src="flutter.png" alt="Flutter" class="fab mb-2 w-10">
                             <span class="text-sm">flutter</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <img src="NextJS.png" alt="Next.js" class="fab mb-2 w-10">
                             <span class="text-sm">Next.js</span>
                         </div>
                         <div
-                            class="bg-gray-800 bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover">
+                            class="bg-opacity-50 p-4 rounded-lg border border-gray-700 w-24 h-24 flex flex-col items-center justify-center card-hover" style="background-color: #212121;">
                             <img src="fireBase.png" alt="Firebase" class="fab mb-2 w-9">
                             <span class="text-sm">Firebase</span>
                         </div>
@@ -464,13 +460,13 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="py-20 bg-gray-900 bg-opacity-50">
+        <section id="projects" class="py-20 bg-opacity-50 opacity-80" style="background-color: #1A1A1D;">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">
                         <span class="gradient-text">My Projects</span>
                     </h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+                    <div class="w-20 h-1 bg-gradient-to-r from-pink-600 to-red-800 mx-auto"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -479,7 +475,7 @@
                     <div class="project-card h-80">
                         <div class="project-inner relative w-full h-full">
                             <div
-                                class="project-front absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col">
+                                class="project-front absolute w-full h-full rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col" style="background-color: #212121;">
                                 <div
                                     class="mb-4 h-40 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
                                     <img src="palette.PNG" alt="" class="w-16">
@@ -495,13 +491,13 @@
                                 </div>
                             </div>
                             <div
-                                class="project-back absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-blue-500 p-6 flex flex-col justify-center items-center">
+                                class="project-back absolute w-full h-full rounded-xl overflow-hidden border p-6 flex flex-col justify-center items-center" style="background-color: #212121;">
                                 <h3 class="text-xl font-bold mb-4 text-center">Lawwen</h3>
                                 <p class="text-gray-300 text-sm mb-6 text-center"> The app provides an intuitive
                                     interface for designers and creatives to discover and save inspiring color
                                     combinations.</p>
                                 <a href="https://github.com/MQHANAD/Lawwen/tree/main" target="_blank"
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300" style="background-color: #FF0B55;">
                                     View Project
                                 </a>
                             </div>
@@ -511,7 +507,7 @@
                     <div class="project-card h-80">
                         <div class="project-inner relative w-full h-full">
                             <div
-                                class="project-front absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col">
+                                class="project-front absolute w-full h-full rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col" style="background-color: #212121;">
                                 <div
                                     class="mb-4 h-40 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                                     <img src="tooth.PNG" alt="" class="w-16">
@@ -530,13 +526,13 @@
                                 </div>
                             </div>
                             <div
-                                class="project-back absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-blue-500 p-6 flex flex-col justify-center items-center">
+                                class="project-back absolute w-full h-full rounded-xl overflow-hidden border p-6 flex flex-col justify-center items-center" style="background-color: #212121;">
                                 <h3 class="text-xl font-bold mb-4 text-center">Sen</h3>
                                 <p class="text-gray-300 text-sm mb-6 text-center">The app allows users to take a picture
                                     of their teeth through an integrated camera, then analyzes the image to provide
                                     accurate diagnoses and insights.</p>
                                 <a href="https://github.com/MQHANAD/Sen" target="_blank"
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300" style="background-color: #FF0B55;">
                                     View Project
                                 </a>
                             </div>
@@ -547,7 +543,7 @@
                     <div class="project-card h-80">
                         <div class="project-inner relative w-full h-full">
                             <div
-                                class="project-front absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col">
+                                class="project-front absolute w-full h-full rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col" style="background-color: #212121;">
                                 <div
                                     class="mb-4 h-40 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center">
                                     <img src="POS.PNG" alt="" class="w-16">
@@ -563,12 +559,12 @@
                                 </div>
                             </div>
                             <div
-                                class="project-back absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-blue-500 p-6 flex flex-col justify-center items-center">
+                                class="project-back absolute w-full h-full rounded-xl overflow-hidden border p-6 flex flex-col justify-center items-center" style="background-color: #212121;">
                                 <h3 class="text-xl font-bold mb-4 text-center">POSitiveFlow</h3>
                                 <p class="text-gray-300 text-sm mb-6 text-center">this system integrates seamlessly with
                                     WhatsApp for sending digital receipts and managing customer loyalty programs.</p>
                                 <a href="https://github.com/mo-alkubaish/POSitiveflow" target="_blank"
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300" style="background-color: #FF0B55;">
                                     View Project
                                 </a>
                             </div>
@@ -579,7 +575,7 @@
                     <div class="project-card h-80">
                         <div class="project-inner relative w-full h-full">
                             <div
-                                class="project-front absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col">
+                                class="project-front absolute w-full h-full rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col" style="background-color: #212121;">
                                 <div
                                     class="mb-4 h-40 bg-gradient-to-br from-orange-500 to-yellow-600 rounded-lg flex items-center justify-center">
                                     <img src="porsche.PNG" alt="" class="w-20">
@@ -595,12 +591,12 @@
                                 </div>
                             </div>
                             <div
-                                class="project-back absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-blue-500 p-6 flex flex-col justify-center items-center">
+                                class="project-back absolute w-full h-full rounded-xl overflow-hidden border p-6 flex flex-col justify-center items-center" style="background-color: #212121;">
                                 <h3 class="text-xl font-bold mb-4 text-center">Hit The Road Jack</h3>
                                 <p class="text-gray-300 text-sm mb-6 text-center">Your goal is to help him avoid
                                     collisions with other cars and achieve high scores. One crash ends the game.</p>
                                 <a href="https://www.youtube.com/watch?v=yB_7P4pH5cI" target="_blank"
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300" style="background-color: #FF0B55;">
                                     View Project
                                 </a>
                             </div>
@@ -611,7 +607,7 @@
                     <div class="project-card h-80">
                         <div class="project-inner relative w-full h-full">
                             <div
-                                class="project-front absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col">
+                                class="project-front absolute w-full h-full rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col" style="background-color: #212121;">
                                 <div
                                     class="mb-4 h-40 bg-gradient-to-br from-blue-500 to-red-600 rounded-lg flex items-center justify-center">
                                     <img src="plane.PNG" alt="" class="w-16">
@@ -629,13 +625,13 @@
                                 </div>
                             </div>
                             <div
-                                class="project-back absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-blue-500 p-6 flex flex-col justify-center items-center">
+                                class="project-back absolute w-full h-full rounded-xl overflow-hidden border p-6 flex flex-col justify-center items-center" style="background-color: #212121;">
                                 <h3 class="text-xl font-bold mb-4 text-center">Flight Reservation System</h3>
                                 <p class="text-gray-300 text-sm mb-6 text-center">It manages and books flights
                                     efficiently, providing a user-friendly interface for passengers, and administrators.
                                 </p>
                                 <a href="https://youtu.be/iZbpk-FGGpQ" target="_blank"
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300" style="background-color: #FF0B55;">
                                     View Project
                                 </a>
                             </div>
@@ -646,7 +642,7 @@
                     <div class="project-card h-80">
                         <div class="project-inner relative w-full h-full">
                             <div
-                                class="project-front absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col">
+                                class="project-front absolute w-full h-full rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col" style="background-color: #212121;">
                                 <div
                                     class="mb-4 h-40 bg-gradient-to-br from-green-500 to-orange-600 rounded-lg flex items-center justify-center">
                                     <img src="viualizer.PNG" alt="" class="w-16">
@@ -663,7 +659,7 @@
                                 </div>
                             </div>
                             <div
-                                class="project-back absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-blue-500 p-6 flex flex-col justify-center items-center">
+                                class="project-back absolute w-full h-full rounded-xl overflow-hidden border p-6 flex flex-col justify-center items-center" style="background-color: #212121;">
                                 <h3 class="text-xl font-bold mb-4 text-center">َFile/Folder visulizer</h3>
                                 <p class="text-gray-300 text-sm mb-6 text-center">Designed to follow the following
                                     design patterns:<br>
@@ -671,7 +667,7 @@
                                     <li>Composite pattern</li> <br>
                                 </p>
                                 <a href="https://youtu.be/eEKRFVAhiiM" target="_blank"
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300" style="background-color: #FF0B55;">
                                     View Project
                                 </a>
                             </div>
@@ -682,7 +678,7 @@
                     <div class="project-card h-80 extra-project hidden">
                         <div class="project-inner relative w-full h-full">
                             <div
-                                class="project-front absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col">
+                                class="project-front absolute w-full h-full rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col" style="background-color: #212121;">
                                 <div
                                     class="mb-4 h-40 bg-gradient-to-br from-blue-500 to-pruple-600 rounded-lg flex items-center justify-center">
                                     <img src="shapes.PNG" alt="" class="w-16">
@@ -699,7 +695,7 @@
                                 </div>
                             </div>
                             <div
-                                class="project-back absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-blue-500 p-6 flex flex-col justify-center items-center">
+                                class="project-back absolute w-full h-full rounded-xl overflow-hidden border p-6 flex flex-col justify-center items-center" style="background-color: #212121;">
                                 <h3 class="text-xl font-bold mb-4 text-center">َShapes Drawing App</h3>
                                 <p class="text-gray-300 text-sm mb-6 text-center">Designed to follow the following
                                     Principles:
@@ -709,7 +705,7 @@
                                     <br>
                                 </p>
                                 <a href="https://youtu.be/fUWjdxtmLRk" target="_blank"
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300">
+                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300" style="background-color: #FF0B55;">
                                     View Project
                                 </a>
                             </div>
@@ -720,7 +716,7 @@
                     <div class="project-card h-80 extra-project hidden">
                         <div class="project-inner relative w-full h-full">
                             <div
-                                class="project-front absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col">
+                                class="project-front absolute w-full h-full rounded-xl overflow-hidden border border-gray-700 p-6 flex flex-col" style="background-color: #212121;">
                                 <div
                                     class="mb-4 h-40 bg-gradient-to-br from-blue-500 to-green-600 rounded-lg flex items-center justify-center">
                                     <img src="quran.PNG" alt="" class="w-16">
@@ -736,7 +732,7 @@
                                 </div>
                             </div>
                             <div
-                                class="project-back absolute w-full h-full bg-gray-800 rounded-xl overflow-hidden border border-blue-500 p-6 flex flex-col justify-center items-center">
+                                class="project-back absolute w-full h-full rounded-xl overflow-hidden border p-6 flex flex-col justify-center items-center" style="background-color: #212121;">
                                 <h3 class="text-xl font-bold mb-4 text-center">Quran city</h3>
                                 <p class="text-gray-300 text-sm mb-6 text-center"> It's an open-world city consisting of
                                     30 buildings, with each building representing a Juzu (part) of the Quran. Each
@@ -744,7 +740,7 @@
                                     way to explore and learn the Quran.
                                 </p>
                                 <a href="https://youtu.be/SRWpIGJX-5I" target="_blank"
-                                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition duration-300">
+                                    class="px-4 py-2 rounded-lg font-medium text-sm transition duration-300" style="background-color: #FF0B55;" >
                                     View Project
                                 </a>
                             </div>
@@ -757,7 +753,7 @@
 
                 <div class="text-center mt-12">
                     <button id="toggle-projects"
-                        class="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-400 hover:bg-blue-900 hover:bg-opacity-30 rounded-lg font-medium transition duration-300">
+                        class="inline-flex items-center px-6 py-3 border hover:bg-pink-900 hover:bg-opacity-30 rounded-lg font-medium transition duration-300" style="color: #FFDEDE; border-color: #FF0B55;">
                         View All Projects
                         <i class="fas fa-arrow-right ml-2"></i>
                     </button>
@@ -772,7 +768,7 @@
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">
                         <span class="gradient-text">Get In Touch</span>
                     </h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+                    <div class="w-20 h-1 bg-gradient-to-r from-pink-600 to-red-800 mx-auto"></div>
                 </div>
                 <div class="flex flex-col md:flex-row gap-12">
                     <div class="md:w-1/2">
@@ -783,28 +779,28 @@
                         </p>
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="bg-blue-600 bg-opacity-20 p-3 rounded-lg mr-4">
-                                    <i class="fas fa-envelope text-blue-400"></i>
+                                <div class="bg-opacity-20 p-3 rounded-lg mr-4" style="background-color: #CF0F47;">
+                                    <i class="fas fa-envelope" style="color: #FFDEDE;"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-200">Email</h4>
                                     <a href="mailto:m4h910@gmail.com"
-                                        class="text-blue-400 hover:underline">m4h910@gmail.com</a>
+                                        class="hover:underline" style="color: #FF0B55;">m4h910@gmail.com</a>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <div class="bg-blue-600 bg-opacity-20 p-3 rounded-lg mr-4">
-                                    <i class="fas fa-phone-alt text-blue-400"></i>
+                                <div class="bg-opacity-20 p-3 rounded-lg mr-4" style="background-color: #CF0F47;">
+                                    <i class="fas fa-phone-alt" style="color: #FFDEDE;"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-200">Phone</h4>
-                                    <a href="tel:+966506206673" class="text-blue-400 hover:underline">+966 50 620
+                                    <a href="tel:+966506206673" class="hover:underline" style="color: #FF0B55;">+966 50 620
                                         6673</a>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <div class="bg-blue-600 bg-opacity-20 p-3 rounded-lg mr-4">
-                                    <i class="fas fa-map-marker-alt text-blue-400"></i>
+                                <div class="bg-opacity-20 p-3 rounded-lg mr-4" style="background-color: #CF0F47;">
+                                    <i class="fas fa-map-marker-alt" style="color: #FFDEDE;"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-200">Location</h4>
@@ -816,15 +812,15 @@
                             <h4 class="font-bold text-gray-200 mb-4">Follow Me</h4>
                             <div class="flex space-x-4">
                                 <a href="https://github.com/MQHANAD" target="_blank"
-                                    class="bg-gray-800 bg-opacity-50 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-600 transition duration-300">
+                                    class="bg-gray-800 bg-opacity-50 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white hover:bg-pink-800 transition duration-300">
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a href="https://www.linkedin.com/in/muhannad-alduraywish-204a0b264" target="_blank"
-                                    class="bg-gray-800 bg-opacity-50 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-400 transition duration-300">
+                                    class="bg-gray-800 bg-opacity-50 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white hover:bg-pink-800 transition duration-300">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                                 <a href="https://x.com/mnd__0" target="_blank"
-                                    class="bg-gray-800 bg-opacity-50 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-300 transition duration-300">
+                                    class="bg-gray-800 bg-opacity-50 w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white hover:bg-pink-800 transition duration-300">
                                     <i class="fab fa-x"></i>
                                 </a>
                             </div>
@@ -832,10 +828,10 @@
                     </div>
                     <div class="relative w-64 h-64 md:w-1/3 md:h-1/3 ml-16 mt-16">
                         <div
-                            class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-20 blur-xl floating">
+                            class="absolute inset-0 rounded-full bg-gradient-to-br from-pink-500 to-red-300 opacity-20 blur-xl floating">
                         </div>
                         <div
-                            class="relative rounded-full overflow-hidden border-4 border-blue-500 w-full h-full floating">
+                            class="relative rounded-full overflow-hidden border-4 w-full h-full floating" style="border-color: #CF0F47;">
                             <img src="Muhannad1.PNG" alt="Profile" class="w-full h-full object-cover">
                         </div>
                     </div>
@@ -843,7 +839,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="py-8 bg-gray-900 bg-opacity-80">
+        <footer class="py-8 bg-opacity-80" style="background-color: #1A1A1D;">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="mb-4 md:mb-0">
@@ -868,7 +864,7 @@
             var typed = new Typed('#typed', {
                 strings: ['Muhannad Alduraywish', 'a Developer', 'a Software Engineer', 'a Problem Solver'],
                 typeSpeed: 70,
-                backSpeed: 50,
+                backSpeed: 90,
                 loop: true,
                 showCursor: true,
                 cursorChar: '|',
@@ -926,7 +922,7 @@
                         }
                     },
                     color: {
-                        value: "#3b82f6"
+                        value: "#FFFFFF"
                     },
                     shape: {
                         type: "circle",
@@ -939,7 +935,7 @@
                         }
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 1,
                         random: false,
                         anim: {
                             enable: false,
@@ -949,7 +945,7 @@
                         }
                     },
                     size: {
-                        value: 3,
+                        value: 2,
                         random: true,
                         anim: {
                             enable: false,
@@ -959,7 +955,7 @@
                         }
                     },
                     line_linked: {
-                        enable: true,
+                        enable: false,
                         distance: 150,
                         color: "#3b82f6",
                         opacity: 0.4,
@@ -967,7 +963,7 @@
                     },
                     move: {
                         enable: true,
-                        speed: 2,
+                        speed: 0.6,
                         direction: "none",
                         random: false,
                         straight: false,
